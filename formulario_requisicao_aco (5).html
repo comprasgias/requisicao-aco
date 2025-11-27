@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requisição de Aço - Engenharia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+      line-height: 1.4;
+    }
+    h2 {
+      background: #E30613;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 15px 0;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    button {
+      background: #E30613;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArYAAAIkCAIAAABkz//zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQA"+ " alt="Logo" style="max-width:180px; display:block; margin-bottom:20px;">
+  <h2 style="background:#E30613;">Formulário de Requisição de Aço – Engenharia → Suprimentos</h2>
+
+  <form action="mailto:compras@giacomossi.com.br" method="POST" enctype="multipart/form-data">
+    <label>Obra:</label>
+    <input type="text" required>
+
+    <div class="row">
+      <div>
+        <label>Data da solicitação:</label>
+        <input type="date" required>
+      </div>
+      <div>
+        <label>Data prevista de uso:</label>
+        <input type="date" required>
+      </div>
+    </div>
+
+    <label>Engenheiro solicitante:</label>
+    <input type="text" required>
+
+    <h3>Materiais Solicitados</h3>
+
+    <div class="row">
+      <label><input type="checkbox"> Bitola 5mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 6.3mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 8mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 10mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 12.5mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 16mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 20mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+
+      <label><input type="checkbox"> Bitola 25mm</label>
+      <input type="number" placeholder="Quantidade" min="0">
+    </div>
+
+    <h3>Prioridade</h3>
+    <select>
+      <option>Alta – risco de paralisação</option>
+      <option>Média – dentro do cronograma</option>
+      <option>Baixa – estoque mínimo</option>
+    </select
+
+    <h3>Enviar arquivos (PDF, Excel, PNG, etc.)</h3>
+    <input type="file" multiple>
+
+    <br><br>
+    <button type="button" onclick="window.print()">Salvar em PDF</button>
+  </form>
+</body>
+</html>
